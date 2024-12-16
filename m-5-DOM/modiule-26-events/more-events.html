@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body>
+    <h1>Explore More Events</h1>
+    <button id="btn-more">Events</button>
+    <input type="text" name="" id="input-field">
+    <script>
+        // document.getElementById('input-field').addEventListener('focus', function(){
+        //     console.log('event triggered inside the input field'); //cursor niye click korle  e focus a asbe count hobe
+        // })
+        // document.getElementById('input-field').addEventListener('blur', function(){
+        //     console.log('event triggered inside the input field blur'); // input field er bahire click korle blur hoye jabe
+        // })
+        // document.getElementById('input-field').addEventListener('keydown', function(){
+        //     console.log(event.target.value); // target dile input field k pabe 
+        // })
+        // document.getElementById('input-field').addEventListener('keypress', function(){
+        //     console.log(event.target.value); // target dile input field k pabe 
+        // })
+        document.getElementById('input-field').addEventListener('keyup', function(){
+            console.log(event.target.value); // target dile input field k pabe 
+        })
+        document.getElementById('btn-more').addEventListener('mouseenter', function(){
+            console.log('more events triggered');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+nav > ul{
+    display:flex; /* ডিসপ্লে তে একলাইনে চলে আসা ই ফ্রেক্স। */
+}
+nav li{
+
+   list-style: mone; /*  লিস্টের দাগ সরানোর জন্য ব্যবহার করা হয়েছে। */
+margin-right: 10px;
+padding: 5px;
+
+}
+nav li:hover{
+    background-color: blue;
+}
+
+nav li a{
+    text-decoration: none;
+}
+/*  nested menu styles */
+nav li .dropdown{
+    display: none;
+position: absolute;     /* নিজের মত যায়গা করে নিবে অন্যটাকে না সরিয়ে। */
+background-color: yellow;
+
+}
+ nav li:hover .dropdown{   /*কিন্তু যদি নাভ এর মধ্যে েএল আই এর ব্লগ হোবার করি তাহলে দেখাবে। */
+    display: block;
+}

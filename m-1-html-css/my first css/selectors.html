@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mixed selectors</title>
+    <style>
+*{
+    /*margin: 0;*/
+}
+        p{
+            color:blue;
+        }
+        .color {
+
+            color:indianred;
+        }
+        #fifth{
+            font-size: 16px;
+            background-color: lightblue;
+        }
+        .bold, .holod{
+            font-weight: 900;
+            font-size: larger;
+        }
+        .third{
+
+            background-color: red;
+        }
+        input[type="password"]{ /*attribute selector*/
+            color:red;
+            
+        }
+        .span{
+            color:rgb(250, 4, 86);
+        }
+        .lorem{
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h3>explore mixed selectors</h3>
+    <p> my first <span class="span">line in css</span></p> 
+    <p> my second line in css</p>
+    <p class="third"> my third line in css</p>
+    <p> my forth line in css</p>
+    <p class="holod"id="fifth"> my fifth line in css</p>
+    <p> my six line in css</p>
+    <p class="third bold"> my seven line in css</p>
+    <p class="color"> my Eight line in css</p>
+    <p class="bold"> my nine line in css</p>
+    <p> my ten line in css</p>
+    
+    <div class="lorem">
+<h4> my blog</h4>
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae corrupti culpa excepturi cum, necessitatibus ea rerum expedita quia qui non ratione doloremque labore! Sint neque cupiditate ratione necessitatibus quam temporibus!</p>
+
+    </div>
+        <li> elements selector</li>
+        <li>ID SELECTOR</li>
+        <li class="color">class selector</li>
+        <li class="holod">universal selector</li>
+
+    </ol>
+    <form action="">
+        <input type="text"> <br> <br>
+        <input type="email" name="" id="">
+        <br><br>
+        <input type="password" name="" id="">
+        <br>
+        <input type="submit" value="">
+       
+    </form>
+</body>
+</html>
