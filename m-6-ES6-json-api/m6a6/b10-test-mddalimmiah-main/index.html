@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- tailwind and DaisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- custom color and font -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#131313',
+                
+              },
+              fontFamily:{
+                lato:["Lato", "serif"],
+              },    
+            },
+          },
+        }
+      </script>
+</head>
+<body class="font-lato">
+    <header class="w-11/12 mx-auto py-4">
+        <nav class="flex justify-between items-center ">
+            <div class="flex gap-2">
+                <img src="images/logo.webp" alt="">
+                <h2 class="font-bold text-3xl text-primary-color">Peddy</h2>
+            </div>
+            <div class="flex justify-center items-center">
+                <ul class="flex justify-center items-center gap-4 lg:gap-10 text-[#131313]">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </nav>
+        <div class="py-10">
+            <div class=" space-y-8 flex justify-center items-center flex-col">
+                <h2 class="text-center text-[#13131399]">Bringing Families Together ❤️‍🔥</h2>
+                <h1 class="text-primary-color text-3xl lg:text-5xl font-black text-center "> Your Path to Adoption <br> Starts Here</h1>
+                <p class="w-2/4 mx-auto text-center font-normal">Your journey to welcoming love into your life begins here, on the path to adoption.ake the first step in your adoption journey right here, right now</p>
+                <button class="btn bg-[#0E7A81] text-white">View More</button>
+            </div>
+           <div class="flex justify-center items-center"> <img src="images/pet.webp" alt=""></div>
+        </div>
+    </header>
+    <main class="w-11/12 mx-auto">
+        <h2 class="text-center font-bold text-3xl">Adopt  Your  Best Friend</h2>
+        <p class="text-center text-base py-6">Adopt a pet, gain a best friend, and fill your home with joy</p>
+        <!-- btn category -->
+        <div id="btn-categories" class="grid grid-cols-2 lg:grid-cols-4 py-5 gap-8">
+
+        </div>
+        <!-- sort btn -->
+         <div class="flex justify-between py-8">
+          <button class="btn">Best Deal for You</button>
+          <button class="btn bg-[#0E7A81] text-white">Sort By Price</button>
+         </div>
+         <section class="">
+          <div id="card-container" class=" w-full lg:w-9/12 grid grid-cols-2 lg:grid-cols-3 gap-5 "></div>
+          <div class="w-2/12 grid grid-cols-1 lg:grid-cols-2" ></div>
+         </section>
+    </main>
+    <footer class="footer bg-neutral text-neutral-content p-10">
+        <nav>
+            <div class="flex gap-2">
+                <img class="w-8" src="images/logo.webp" alt="">
+                <h2 class="font-bold text-3xl text-white">Peddy</h2>
+            </div>
+          <a class="link link-hover">Location: av. Washington 165, NY CA <br> 54003
+            
+            
+            </a>
+          <a class="link link-hover">Phone: +31 85 964 47 25</a>
+          <a class="link link-hover">Email: info@yourdomain.com</a>
+          <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+          <!-- <a class="link link-hover"><i class="fa-brands fa-facebook"></i></a>
+          <a class="link link-hover"><i class="fa-brands fa-x-twitter"></i></a>
+          <a class="link link-hover"><i class="fa-brands fa-youtube"></i></a>
+          <a class="link link-hover"><i class="fa-brands fa-square-instagram"></i></a> -->
+          <div class="flex gap-4">
+            <img class="w-6" src="images/facebook.png" alt="">
+            <img class="w-6" src="images/Twitter.png" alt="">
+            <img class="w-6" src="images/youtube.png" alt="">
+            <img class="w-6" src="images/Instagram.png" alt="">
+            
+          </div>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Useful Links</h6>
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Animals</a>
+          <a class="link link-hover">Foundation</a>
+          <a class="link link-hover">Contact</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Drop Message</h6>
+          <input class="bg-black bg-transparent" type="email" name="" id="" placeholder="Enter Your Email">
+            <button class="btn w-full bg-[#0E7A81]">Subscribe</button>
+        </nav>
+      </footer>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
